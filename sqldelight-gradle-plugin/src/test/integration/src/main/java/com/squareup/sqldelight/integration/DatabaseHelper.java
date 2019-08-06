@@ -1,4 +1,4 @@
-package com.squareup.sqldelight.integration;
+package com.evilstudios.sqldelight.integration;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.lang.BracePair
 import com.intellij.lang.PairedBraceMatcher
 import com.intellij.psi.PsiFile
 import com.intellij.psi.tree.IElementType
-import com.squareup.sqldelight.SqliteLexer
-import com.squareup.sqldelight.intellij.lang.SqliteTokenTypes.TOKEN_ELEMENT_TYPES
+import com.evilstudios.sqldelight.SqliteLexer
+import com.evilstudios.sqldelight.intellij.lang.SqliteTokenTypes.TOKEN_ELEMENT_TYPES
 
 class SqlitePairedBraceMatcher : PairedBraceMatcher {
   private val BRACE_PAIRS = arrayOf(BracePair(TOKEN_ELEMENT_TYPES[SqliteLexer.OPEN_PAR],

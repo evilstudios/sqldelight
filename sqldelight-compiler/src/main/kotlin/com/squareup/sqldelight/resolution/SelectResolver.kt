@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.resolution
+package com.evilstudios.sqldelight.resolution
 
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.resolution.query.QueryResults
-import com.squareup.sqldelight.resolution.query.Result
-import com.squareup.sqldelight.resolution.query.Table
-import com.squareup.sqldelight.resolution.query.Value
-import com.squareup.sqldelight.resolution.query.merge
-import com.squareup.sqldelight.resolution.query.resultColumnSize
-import com.squareup.sqldelight.types.ArgumentType.SingleValue
-import com.squareup.sqldelight.validation.SelectOrValuesValidator
-import com.squareup.sqldelight.validation.SelectStmtValidator
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqlitePluginException
+import com.evilstudios.sqldelight.resolution.query.QueryResults
+import com.evilstudios.sqldelight.resolution.query.Result
+import com.evilstudios.sqldelight.resolution.query.Table
+import com.evilstudios.sqldelight.resolution.query.Value
+import com.evilstudios.sqldelight.resolution.query.merge
+import com.evilstudios.sqldelight.resolution.query.resultColumnSize
+import com.evilstudios.sqldelight.types.ArgumentType.SingleValue
+import com.evilstudios.sqldelight.validation.SelectOrValuesValidator
+import com.evilstudios.sqldelight.validation.SelectStmtValidator
 
 internal fun Resolver.resolve(
     selectStmt: SqliteParser.Select_stmtContext,

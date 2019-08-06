@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.actions
+package com.evilstudios.sqldelight.intellij.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.LangDataKeys
 import com.intellij.openapi.actionSystem.PlatformDataKeys
 import com.intellij.openapi.ide.CopyPasteManager
-import com.squareup.sqldelight.SqliteCompiler
-import com.squareup.sqldelight.intellij.lang.SqliteFile
-import com.squareup.sqldelight.model.sqliteText
+import com.evilstudios.sqldelight.SqliteCompiler
+import com.evilstudios.sqldelight.intellij.lang.SqliteFile
+import com.evilstudios.sqldelight.model.sqliteText
 import java.awt.datatransfer.StringSelection
 
 class CopyAsSqliteAction : AnAction() {

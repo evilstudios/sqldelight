@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.codeInsight.navigation.actions.GotoDeclarationHandler
 import com.intellij.openapi.actionSystem.DataContext
@@ -24,14 +24,14 @@ import com.intellij.psi.PsiField
 import com.intellij.psi.PsiIdentifier
 import com.intellij.psi.PsiManager
 import com.intellij.psi.impl.source.tree.java.PsiReferenceExpressionImpl
-import com.squareup.sqldelight.SqliteCompiler
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.intellij.lang.SqliteTokenTypes.RULE_ELEMENT_TYPES
-import com.squareup.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
-import com.squareup.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
-import com.squareup.sqldelight.intellij.util.childOfType
-import com.squareup.sqldelight.intellij.util.collectElements
-import com.squareup.sqldelight.intellij.util.elementType
+import com.evilstudios.sqldelight.SqliteCompiler
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.intellij.lang.SqliteTokenTypes.RULE_ELEMENT_TYPES
+import com.evilstudios.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
+import com.evilstudios.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
+import com.evilstudios.sqldelight.intellij.util.childOfType
+import com.evilstudios.sqldelight.intellij.util.collectElements
+import com.evilstudios.sqldelight.intellij.util.elementType
 
 class SqliteGotoDeclarationHandler : GotoDeclarationHandler {
   override fun getGotoDeclarationTargets(sourceElement: PsiElement?, offset: Int,

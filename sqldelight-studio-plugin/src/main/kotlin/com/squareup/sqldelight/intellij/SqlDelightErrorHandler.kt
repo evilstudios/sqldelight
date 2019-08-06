@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij
+package com.evilstudios.sqldelight.intellij
 
 import com.bugsnag.Client
 import com.bugsnag.MetaData
@@ -23,7 +23,7 @@ import com.intellij.openapi.diagnostic.ErrorReportSubmitter
 import com.intellij.openapi.diagnostic.IdeaLoggingEvent
 import com.intellij.openapi.diagnostic.SubmittedReportInfo
 import com.intellij.util.Consumer
-import com.squareup.sqldelight.VERSION
+import com.evilstudios.sqldelight.VERSION
 import java.awt.Component
 
 class SqlDelightErrorHandler : ErrorReportSubmitter() {
@@ -32,7 +32,7 @@ class SqlDelightErrorHandler : ErrorReportSubmitter() {
   init {
     bugsnag.setAppVersion(VERSION)
     bugsnag.setOsVersion(System.getProperty("os.version"))
-    bugsnag.setProjectPackages("com.squareup.sqldelight")
+    bugsnag.setProjectPackages("com.evilstudios.sqldelight")
   }
 
   override fun getReportActionText() = "Send to Square"

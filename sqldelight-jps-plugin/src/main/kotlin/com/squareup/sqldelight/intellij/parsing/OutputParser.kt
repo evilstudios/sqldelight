@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.parsing
+package com.evilstudios.sqldelight.intellij.parsing
 
 import com.android.ide.common.blame.Message
 import com.android.ide.common.blame.SourceFilePosition

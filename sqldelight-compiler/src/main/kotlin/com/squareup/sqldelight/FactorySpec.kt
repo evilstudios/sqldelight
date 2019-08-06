@@ -13,22 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight
+package com.evilstudios.sqldelight
 
-import com.squareup.javapoet.ClassName
-import com.squareup.javapoet.CodeBlock
-import com.squareup.javapoet.FieldSpec
-import com.squareup.javapoet.MethodSpec
-import com.squareup.javapoet.ParameterSpec
-import com.squareup.javapoet.ParameterizedTypeName
-import com.squareup.javapoet.TypeName
-import com.squareup.javapoet.TypeSpec
-import com.squareup.javapoet.TypeVariableName
-import com.squareup.sqldelight.model.SqlStmt
-import com.squareup.sqldelight.resolution.query.QueryResults
-import com.squareup.sqldelight.resolution.query.Table
-import com.squareup.sqldelight.resolution.query.Value
-import com.squareup.sqldelight.resolution.query.foreignValues
+import com.evilstudios.javapoet.ClassName
+import com.evilstudios.javapoet.CodeBlock
+import com.evilstudios.javapoet.FieldSpec
+import com.evilstudios.javapoet.MethodSpec
+import com.evilstudios.javapoet.ParameterSpec
+import com.evilstudios.javapoet.ParameterizedTypeName
+import com.evilstudios.javapoet.TypeName
+import com.evilstudios.javapoet.TypeSpec
+import com.evilstudios.javapoet.TypeVariableName
+import com.evilstudios.sqldelight.model.SqlStmt
+import com.evilstudios.sqldelight.resolution.query.QueryResults
+import com.evilstudios.sqldelight.resolution.query.Table
+import com.evilstudios.sqldelight.resolution.query.Value
+import com.evilstudios.sqldelight.resolution.query.foreignValues
 import java.util.ArrayList
 import java.util.LinkedHashSet
 import javax.lang.model.element.Modifier
@@ -110,7 +110,7 @@ internal class FactorySpec(
         mapperMethod.addTypeVariable(typeVariable)
             .addParameter(ParameterizedTypeName.get(queryResults.creatorType,
                 *typeVariables.toTypedArray()), Table.CREATOR_FIELD)
-      } else if (queryResults.results.size == 1 && firstResult is com.squareup.sqldelight.resolution.query.Table) {
+      } else if (queryResults.results.size == 1 && firstResult is com.evilstudios.sqldelight.resolution.query.Table) {
         mapperType = firstResult.javaType.nestedClass(MapperSpec.MAPPER_NAME)
       } else {
         typeSpec.addMethod(queryResults.singleValueMapper())

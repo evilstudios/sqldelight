@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.lang.findUsages.FindUsagesProvider
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiFile
-import com.squareup.sqldelight.intellij.psi.SqliteElement
+import com.evilstudios.sqldelight.intellij.psi.SqliteElement
 
 class SqliteFindUsagesProvider : FindUsagesProvider {
   override fun getWordsScanner() = null

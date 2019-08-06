@@ -14,7 +14,7 @@ import butterknife.ButterKnife;
 import com.example.sqldelight.hockey.R;
 import com.example.sqldelight.hockey.data.HockeyOpenHelper;
 import com.example.sqldelight.hockey.data.Player;
-import com.squareup.sqldelight.SqlDelightStatement;
+import com.evilstudios.sqldelight.SqlDelightStatement;
 
 public final class PlayersActivity extends Activity {
   public static final String TEAM_ID = "team_id";

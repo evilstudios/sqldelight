@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.resolution.query
+package com.evilstudios.sqldelight.resolution.query
 
-import com.squareup.javapoet.ClassName
-import com.squareup.javapoet.MethodSpec
-import com.squareup.javapoet.NameAllocator
-import com.squareup.javapoet.ParameterSpec
-import com.squareup.javapoet.ParameterizedTypeName
-import com.squareup.javapoet.TypeName
-import com.squareup.javapoet.TypeSpec
-import com.squareup.javapoet.TypeVariableName
-import com.squareup.sqldelight.MapperSpec
-import com.squareup.sqldelight.model.columnName
-import com.squareup.sqldelight.util.getOrSet
+import com.evilstudios.javapoet.ClassName
+import com.evilstudios.javapoet.MethodSpec
+import com.evilstudios.javapoet.NameAllocator
+import com.evilstudios.javapoet.ParameterSpec
+import com.evilstudios.javapoet.ParameterizedTypeName
+import com.evilstudios.javapoet.TypeName
+import com.evilstudios.javapoet.TypeSpec
+import com.evilstudios.javapoet.TypeVariableName
+import com.evilstudios.sqldelight.MapperSpec
+import com.evilstudios.sqldelight.model.columnName
+import com.evilstudios.sqldelight.util.getOrSet
 import org.antlr.v4.runtime.ParserRuleContext
 import java.util.LinkedHashMap
 import java.util.LinkedHashSet

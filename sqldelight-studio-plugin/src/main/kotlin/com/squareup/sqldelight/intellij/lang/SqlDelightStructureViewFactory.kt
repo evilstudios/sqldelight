@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.ide.structureView.StructureViewModel
 import com.intellij.ide.structureView.StructureViewModelBase
@@ -28,10 +28,10 @@ import com.intellij.openapi.util.Iconable
 import com.intellij.pom.Navigatable
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiFile
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.intellij.psi.SqliteElement
-import com.squareup.sqldelight.intellij.util.childOfType
-import com.squareup.sqldelight.intellij.util.childrenForRule
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.intellij.psi.SqliteElement
+import com.evilstudios.sqldelight.intellij.util.childOfType
+import com.evilstudios.sqldelight.intellij.util.childrenForRule
 
 class SqlDelightStructureViewFactory : PsiStructureViewFactory {
   override fun getStructureViewBuilder(psiFile: PsiFile) = object : TreeBasedStructureViewBuilder() {

@@ -13,6 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.gradle
+package com.evilstudios.sqldelight.gradle
 
 internal class SqlDelightException(message: String) : IllegalStateException(message)

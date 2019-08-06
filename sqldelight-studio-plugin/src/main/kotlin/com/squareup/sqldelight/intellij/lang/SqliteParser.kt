@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.lang.PsiBuilder
 import com.intellij.psi.tree.IElementType
-import com.squareup.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqliteParser
 import org.antlr.intellij.adaptor.parser.AntlrParser
 import org.antlr.intellij.adaptor.parser.SyntaxErrorListener
 import org.antlr.v4.runtime.TokenStream

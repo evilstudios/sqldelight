@@ -1,6 +1,6 @@
-package com.squareup.sqldelight.util
+package com.evilstudios.sqldelight.util
 
-import com.squareup.javapoet.NameAllocator
+import com.evilstudios.javapoet.NameAllocator
 
 internal fun NameAllocator.getOrSet(objRef: Any, name: String): String {
   try {

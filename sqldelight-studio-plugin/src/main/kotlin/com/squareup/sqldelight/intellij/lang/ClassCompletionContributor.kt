@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.codeInsight.completion.CompletionParameters
 import com.intellij.codeInsight.completion.CompletionResultSet
@@ -23,9 +23,9 @@ import com.intellij.codeInsight.completion.InsertionContext
 import com.intellij.codeInsight.completion.JavaClassNameCompletionContributor
 import com.intellij.codeInsight.completion.JavaPsiClassReferenceElement
 import com.intellij.psi.util.PsiTreeUtil
-import com.squareup.sqldelight.intellij.psi.ClassNameElement
-import com.squareup.sqldelight.intellij.psi.ImportElement
-import com.squareup.sqldelight.intellij.util.parentOfType
+import com.evilstudios.sqldelight.intellij.psi.ClassNameElement
+import com.evilstudios.sqldelight.intellij.psi.ImportElement
+import com.evilstudios.sqldelight.intellij.util.parentOfType
 
 class ClassCompletionContributor : JavaClassNameCompletionContributor() {
   private val insertHandler = AutoImportInsertionHandler()

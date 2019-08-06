@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij
+package com.evilstudios.sqldelight.intellij
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.command.WriteCommandAction
@@ -22,10 +22,10 @@ import com.intellij.openapi.roots.ProjectRootManager
 import com.intellij.openapi.startup.StartupActivity
 import com.intellij.openapi.vfs.VirtualFileManager
 import com.intellij.psi.PsiManager
-import com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProvider
-import com.squareup.sqldelight.intellij.lang.SqliteContentIterator
-import com.squareup.sqldelight.intellij.lang.SqliteFile
-import com.squareup.sqldelight.types.SymbolTable
+import com.evilstudios.sqldelight.intellij.lang.SqlDelightFileViewProvider
+import com.evilstudios.sqldelight.intellij.lang.SqliteContentIterator
+import com.evilstudios.sqldelight.intellij.lang.SqliteFile
+import com.evilstudios.sqldelight.types.SymbolTable
 
 class SqlDelightStartupActivity : StartupActivity {
   override fun runActivity(project: Project) {

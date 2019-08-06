@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.types
+package com.evilstudios.sqldelight.types
 
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.resolution.query.Table
-import com.squareup.sqldelight.resolution.query.Value
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqlitePluginException
+import com.evilstudios.sqldelight.resolution.query.Table
+import com.evilstudios.sqldelight.resolution.query.Value
 import java.util.ArrayList
 
 internal class ForeignKey private constructor(

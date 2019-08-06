@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight
+package com.evilstudios.sqldelight
 
-import com.squareup.javapoet.TypeSpec
-import com.squareup.sqldelight.model.SqlStmt
-import com.squareup.sqldelight.resolution.ResolutionError
-import com.squareup.sqldelight.resolution.query.QueryResults
+import com.evilstudios.javapoet.TypeSpec
+import com.evilstudios.sqldelight.model.SqlStmt
+import com.evilstudios.sqldelight.resolution.ResolutionError
+import com.evilstudios.sqldelight.resolution.query.QueryResults
 import org.antlr.v4.runtime.ParserRuleContext
 
 sealed class Status(val originatingElement: ParserRuleContext) {

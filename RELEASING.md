@@ -23,6 +23,6 @@ Prerequisites
 
 In `~/.gradle/gradle.properties`, set the following:
 
- * `SONATYPE_NEXUS_USERNAME` - Sonatype username for releasing to `com.squareup`.
- * `SONATYPE_NEXUS_PASSWORD` - Sonatype password for releasing to `com.squareup`.
+ * `SONATYPE_NEXUS_USERNAME` - Sonatype username for releasing to `com.evilstudios`.
+ * `SONATYPE_NEXUS_PASSWORD` - Sonatype password for releasing to `com.evilstudios`.
  * `SQLDELIGHT_BUGSNAG_KEY` - Bugsnag API key for crash reporting.

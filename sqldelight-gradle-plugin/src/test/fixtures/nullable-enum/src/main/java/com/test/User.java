@@ -1,7 +1,7 @@
 package com.test;
 
-import com.squareup.sqldelight.ColumnAdapter;
-import com.squareup.sqldelight.EnumColumnAdapter;
+import com.evilstudios.sqldelight.ColumnAdapter;
+import com.evilstudios.sqldelight.EnumColumnAdapter;
 
 public class User implements UserModel {
   public enum Gender {

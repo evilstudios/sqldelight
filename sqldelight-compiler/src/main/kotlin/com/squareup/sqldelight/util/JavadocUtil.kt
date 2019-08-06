@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.util
+package com.evilstudios.sqldelight.util
 
 import org.antlr.v4.runtime.tree.TerminalNode
 

@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.gradle
+package com.evilstudios.sqldelight.gradle
 
-import com.squareup.javapoet.JavaFile
-import com.squareup.sqldelight.SqliteCompiler
-import com.squareup.sqldelight.SqliteLexer
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.SqliteParser.Create_table_stmtContext
-import com.squareup.sqldelight.SqliteParser.Sql_stmtContext
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.Status
-import com.squareup.sqldelight.VERSION
-import com.squareup.sqldelight.model.relativePath
-import com.squareup.sqldelight.model.textWithWhitespace
-import com.squareup.sqldelight.types.SymbolTable
-import com.squareup.sqldelight.validation.SqlDelightValidator
+import com.evilstudios.javapoet.JavaFile
+import com.evilstudios.sqldelight.SqliteCompiler
+import com.evilstudios.sqldelight.SqliteLexer
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqliteParser.Create_table_stmtContext
+import com.evilstudios.sqldelight.SqliteParser.Sql_stmtContext
+import com.evilstudios.sqldelight.SqlitePluginException
+import com.evilstudios.sqldelight.Status
+import com.evilstudios.sqldelight.VERSION
+import com.evilstudios.sqldelight.model.relativePath
+import com.evilstudios.sqldelight.model.textWithWhitespace
+import com.evilstudios.sqldelight.types.SymbolTable
+import com.evilstudios.sqldelight.validation.SqlDelightValidator
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.CommonTokenStream
 import org.antlr.v4.runtime.ParserRuleContext

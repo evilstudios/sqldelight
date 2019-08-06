@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.lang.Language
 import com.intellij.openapi.vfs.VirtualFile
@@ -21,17 +21,17 @@ import com.intellij.psi.FileViewProvider
 import com.intellij.psi.FileViewProviderFactory
 import com.intellij.psi.PsiManager
 import com.intellij.psi.SingleRootFileViewProvider
-import com.squareup.javapoet.JavaFile
-import com.squareup.sqldelight.SqliteCompiler
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.Status
-import com.squareup.sqldelight.Status.ValidationStatus
-import com.squareup.sqldelight.intellij.SqlDelightManager
-import com.squareup.sqldelight.intellij.util.moduleDirectory
-import com.squareup.sqldelight.model.pathPackage
-import com.squareup.sqldelight.types.SymbolTable
-import com.squareup.sqldelight.validation.SqlDelightValidator
+import com.evilstudios.javapoet.JavaFile
+import com.evilstudios.sqldelight.SqliteCompiler
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqlitePluginException
+import com.evilstudios.sqldelight.Status
+import com.evilstudios.sqldelight.Status.ValidationStatus
+import com.evilstudios.sqldelight.intellij.SqlDelightManager
+import com.evilstudios.sqldelight.intellij.util.moduleDirectory
+import com.evilstudios.sqldelight.model.pathPackage
+import com.evilstudios.sqldelight.types.SymbolTable
+import com.evilstudios.sqldelight.validation.SqlDelightValidator
 
 class SqlDelightFileViewProviderFactory : FileViewProviderFactory {
   override fun createFileViewProvider(virtualFile: VirtualFile, language: Language,

@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.validation
+package com.evilstudios.sqldelight.validation
 
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.Status
-import com.squareup.sqldelight.model.SqlStmt
-import com.squareup.sqldelight.model.columnName
-import com.squareup.sqldelight.model.javadocText
-import com.squareup.sqldelight.model.pathAsType
-import com.squareup.sqldelight.resolution.ResolutionError
-import com.squareup.sqldelight.resolution.Resolver
-import com.squareup.sqldelight.resolution.query.QueryResults
-import com.squareup.sqldelight.resolution.query.resultColumnSize
-import com.squareup.sqldelight.resolution.resolve
-import com.squareup.sqldelight.types.SymbolTable
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.Status
+import com.evilstudios.sqldelight.model.SqlStmt
+import com.evilstudios.sqldelight.model.columnName
+import com.evilstudios.sqldelight.model.javadocText
+import com.evilstudios.sqldelight.model.pathAsType
+import com.evilstudios.sqldelight.resolution.ResolutionError
+import com.evilstudios.sqldelight.resolution.Resolver
+import com.evilstudios.sqldelight.resolution.query.QueryResults
+import com.evilstudios.sqldelight.resolution.query.resultColumnSize
+import com.evilstudios.sqldelight.resolution.resolve
+import com.evilstudios.sqldelight.types.SymbolTable
 import org.antlr.v4.runtime.ParserRuleContext
 import java.io.File
 import java.util.ArrayList

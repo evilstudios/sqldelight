@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight
+package com.evilstudios.sqldelight
 
-import com.squareup.javapoet.ClassName
-import com.squareup.javapoet.FieldSpec
-import com.squareup.javapoet.MethodSpec
-import com.squareup.javapoet.TypeSpec
-import com.squareup.sqldelight.model.columnName
-import com.squareup.sqldelight.model.pathAsType
-import com.squareup.sqldelight.model.pathFileName
-import com.squareup.sqldelight.resolution.query.QueryResults
-import com.squareup.sqldelight.resolution.query.Table
-import com.squareup.sqldelight.types.SymbolTable
+import com.evilstudios.javapoet.ClassName
+import com.evilstudios.javapoet.FieldSpec
+import com.evilstudios.javapoet.MethodSpec
+import com.evilstudios.javapoet.TypeSpec
+import com.evilstudios.sqldelight.model.columnName
+import com.evilstudios.sqldelight.model.pathAsType
+import com.evilstudios.sqldelight.model.pathFileName
+import com.evilstudios.sqldelight.resolution.query.QueryResults
+import com.evilstudios.sqldelight.resolution.query.Table
+import com.evilstudios.sqldelight.types.SymbolTable
 import java.io.IOException
 import java.util.Locale
 import javax.lang.model.element.Modifier.ABSTRACT
@@ -138,7 +138,7 @@ class SqliteCompiler {
     val OUTPUT_DIRECTORY = listOf("generated", "source", "sqldelight")
     val NULLABLE = ClassName.get("androidx.annotation", "Nullable")
     val NON_NULL = ClassName.get("androidx.annotation", "NonNull")
-    val COLUMN_ADAPTER_TYPE = ClassName.get("com.squareup.sqldelight", "ColumnAdapter")
+    val COLUMN_ADAPTER_TYPE = ClassName.get("com.evilstudios.sqldelight", "ColumnAdapter")
 
     fun interfaceName(sqliteFileName: String) = sqliteFileName + "Model"
     fun constantName(name: String) = name.toUpperCase(Locale.US)

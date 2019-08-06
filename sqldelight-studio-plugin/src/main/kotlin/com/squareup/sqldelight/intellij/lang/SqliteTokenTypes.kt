@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
-import com.squareup.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqliteParser
 import org.antlr.intellij.adaptor.lexer.ElementTypeFactory
 import java.util.Arrays
 

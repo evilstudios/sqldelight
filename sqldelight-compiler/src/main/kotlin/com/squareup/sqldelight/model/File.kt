@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.model
+package com.evilstudios.sqldelight.model
 
-import com.squareup.javapoet.ClassName
-import com.squareup.sqldelight.SqliteCompiler
+import com.evilstudios.javapoet.ClassName
+import com.evilstudios.sqldelight.SqliteCompiler
 import java.io.File
 
 fun String.relativePath(separatorChar: Char): List<String> {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang.formatter
+package com.evilstudios.sqldelight.intellij.lang.formatter
 
 import com.intellij.formatting.Alignment
 import com.intellij.formatting.FormattingModelBuilder

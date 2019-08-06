@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.internal;
+package com.evilstudios.sqldelight.internal;
 
 import okio.Buffer;
 import org.junit.Test;

@@ -1,7 +1,7 @@
 package com.example.sqldelight.hockey.data;
 
 import com.google.auto.value.AutoValue;
-import com.squareup.sqldelight.RowMapper;
+import com.evilstudios.sqldelight.RowMapper;
 import java.util.Calendar;
 
 @AutoValue

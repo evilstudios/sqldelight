@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.types
+package com.evilstudios.sqldelight.types
 
 import com.google.common.truth.IterableSubject
 import com.google.common.truth.Truth
 import com.google.common.truth.Truth.assertThat
-import com.squareup.sqldelight.SqliteParser.Select_stmtContext
-import com.squareup.sqldelight.resolution.Resolver
-import com.squareup.sqldelight.resolution.query.Result
-import com.squareup.sqldelight.resolution.query.resultColumnSize
-import com.squareup.sqldelight.resolution.resolve
-import com.squareup.sqldelight.util.parse
-import com.squareup.sqldelight.util.statementWithName
+import com.evilstudios.sqldelight.SqliteParser.Select_stmtContext
+import com.evilstudios.sqldelight.resolution.Resolver
+import com.evilstudios.sqldelight.resolution.query.Result
+import com.evilstudios.sqldelight.resolution.query.resultColumnSize
+import com.evilstudios.sqldelight.resolution.resolve
+import com.evilstudios.sqldelight.util.parse
+import com.evilstudios.sqldelight.util.statementWithName
 import org.junit.Test
 import java.io.File
 

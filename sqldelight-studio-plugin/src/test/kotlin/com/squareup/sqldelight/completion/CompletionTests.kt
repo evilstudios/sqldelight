@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.completion
+package com.evilstudios.sqldelight.completion
 
-import com.squareup.sqldelight.SqlDelightFixtureTestCase
+import com.evilstudios.sqldelight.SqlDelightFixtureTestCase
 
 class CompletionTests : SqlDelightFixtureTestCase() {
   override val fixtureDirectory = "completion"

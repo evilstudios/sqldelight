@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.validation
+package com.evilstudios.sqldelight.validation
 
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.resolution.ResolutionError
-import com.squareup.sqldelight.resolution.ResolutionError.ExpressionError
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.resolution.ResolutionError
+import com.evilstudios.sqldelight.resolution.ResolutionError.ExpressionError
 import org.antlr.v4.runtime.RuleContext
 
 internal class ExpressionValidator(

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.lang.CodeDocumentationAwareCommenter
 import com.intellij.psi.PsiComment
-import com.squareup.sqldelight.SqliteLexer
+import com.evilstudios.sqldelight.SqliteLexer
 
 class SqlDelightCommenter : CodeDocumentationAwareCommenter {
   override fun getLineCommentPrefix() = "--"

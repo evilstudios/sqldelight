@@ -2,8 +2,8 @@ package com.sample;
 
 import android.database.Cursor;
 import android.support.annotation.NonNull;
-import com.squareup.sqldelight.RowMapper;
-import com.squareup.sqldelight.SqlDelightStatement;
+import com.evilstudios.sqldelight.RowMapper;
+import com.evilstudios.sqldelight.SqlDelightStatement;
 import java.lang.Override;
 import java.lang.String;
 import java.util.Collections;

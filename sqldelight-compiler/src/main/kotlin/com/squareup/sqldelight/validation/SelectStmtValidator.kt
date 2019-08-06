@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.validation
+package com.evilstudios.sqldelight.validation
 
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.resolution.Resolver
-import com.squareup.sqldelight.resolution.query.Value
-import com.squareup.sqldelight.resolution.resolve
-import com.squareup.sqldelight.types.ArgumentType.SingleValue
-import com.squareup.sqldelight.types.SqliteType
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.resolution.Resolver
+import com.evilstudios.sqldelight.resolution.query.Value
+import com.evilstudios.sqldelight.resolution.resolve
+import com.evilstudios.sqldelight.types.ArgumentType.SingleValue
+import com.evilstudios.sqldelight.types.SqliteType
 
 internal class SelectStmtValidator(private val resolver: Resolver) {
   fun validate(selectStmt: SqliteParser.Select_stmtContext) {

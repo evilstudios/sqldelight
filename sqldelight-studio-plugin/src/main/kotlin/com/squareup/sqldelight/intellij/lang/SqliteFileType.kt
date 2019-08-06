@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.openapi.fileTypes.LanguageFileType
 import com.intellij.openapi.util.IconLoader
 import com.intellij.openapi.vfs.CharsetToolkit
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.openapi.vfs.encoding.EncodingRegistry
-import com.squareup.sqldelight.SqliteCompiler
+import com.evilstudios.sqldelight.SqliteCompiler
 
 class SqliteFileType private constructor() : LanguageFileType(SqliteLanguage.INSTANCE) {
   override fun getName() = "Sqlite"

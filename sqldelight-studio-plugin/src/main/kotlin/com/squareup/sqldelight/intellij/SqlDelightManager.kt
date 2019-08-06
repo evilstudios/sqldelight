@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij
+package com.evilstudios.sqldelight.intellij
 
 import com.intellij.openapi.module.Module
 import com.intellij.openapi.module.ModuleUtil
@@ -21,12 +21,12 @@ import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.PsiElement
 import com.intellij.util.containers.BidirectionalMap
 import com.intellij.util.containers.MultiMap
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProvider
-import com.squareup.sqldelight.intellij.lang.SqliteFile
-import com.squareup.sqldelight.intellij.util.containingParse
-import com.squareup.sqldelight.types.SymbolTable
-import com.squareup.sqldelight.validation.SqlDelightValidator.Companion.ALL_FILE_DEPENDENCY
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.intellij.lang.SqlDelightFileViewProvider
+import com.evilstudios.sqldelight.intellij.lang.SqliteFile
+import com.evilstudios.sqldelight.intellij.util.containingParse
+import com.evilstudios.sqldelight.types.SymbolTable
+import com.evilstudios.sqldelight.validation.SqlDelightValidator.Companion.ALL_FILE_DEPENDENCY
 import org.antlr.v4.runtime.ParserRuleContext
 
 internal class SqlDelightManager private constructor() {

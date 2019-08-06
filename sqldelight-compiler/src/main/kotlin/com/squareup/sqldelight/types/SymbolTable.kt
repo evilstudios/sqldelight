@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.types
+package com.evilstudios.sqldelight.types
 
-import com.squareup.javapoet.ClassName
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.model.pathAsType
-import com.squareup.sqldelight.util.BiMultiMap
-import com.squareup.sqldelight.util.emptyBiMultiMap
-import com.squareup.sqldelight.util.hasTokenIn
+import com.evilstudios.javapoet.ClassName
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqlitePluginException
+import com.evilstudios.sqldelight.model.pathAsType
+import com.evilstudios.sqldelight.util.BiMultiMap
+import com.evilstudios.sqldelight.util.emptyBiMultiMap
+import com.evilstudios.sqldelight.util.hasTokenIn
 import org.antlr.v4.runtime.Token
 import java.util.LinkedHashMap
 

@@ -3,7 +3,7 @@ package com.test;
 import android.content.ContentValues;
 import android.database.Cursor;
 import java.lang.Override;
-import com.squareup.sqldelight.ColumnAdapter;
+import com.evilstudios.sqldelight.ColumnAdapter;
 
 public class User implements UserModel {
   public static class Money {

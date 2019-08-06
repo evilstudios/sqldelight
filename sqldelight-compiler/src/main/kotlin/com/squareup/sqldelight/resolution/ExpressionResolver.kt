@@ -13,22 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.resolution
+package com.evilstudios.sqldelight.resolution
 
-import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.resolution.query.Value
-import com.squareup.sqldelight.resolution.query.ceilValue
-import com.squareup.sqldelight.resolution.query.resultColumnSize
-import com.squareup.sqldelight.types.Argument
-import com.squareup.sqldelight.types.ArgumentType
-import com.squareup.sqldelight.types.ArgumentType.SingleValue
-import com.squareup.sqldelight.types.SqliteType
-import com.squareup.sqldelight.types.SqliteType.BLOB
-import com.squareup.sqldelight.types.SqliteType.INTEGER
-import com.squareup.sqldelight.types.SqliteType.REAL
-import com.squareup.sqldelight.types.SqliteType.TEXT
-import com.squareup.sqldelight.validation.ExpressionValidator
+import com.evilstudios.sqldelight.SqliteParser
+import com.evilstudios.sqldelight.SqlitePluginException
+import com.evilstudios.sqldelight.resolution.query.Value
+import com.evilstudios.sqldelight.resolution.query.ceilValue
+import com.evilstudios.sqldelight.resolution.query.resultColumnSize
+import com.evilstudios.sqldelight.types.Argument
+import com.evilstudios.sqldelight.types.ArgumentType
+import com.evilstudios.sqldelight.types.ArgumentType.SingleValue
+import com.evilstudios.sqldelight.types.SqliteType
+import com.evilstudios.sqldelight.types.SqliteType.BLOB
+import com.evilstudios.sqldelight.types.SqliteType.INTEGER
+import com.evilstudios.sqldelight.types.SqliteType.REAL
+import com.evilstudios.sqldelight.types.SqliteType.TEXT
+import com.evilstudios.sqldelight.validation.ExpressionValidator
 
 internal fun Resolver.resolve(
     expression: SqliteParser.ExprContext,

@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.evilstudios.sqldelight.intellij.lang
 
 import com.intellij.openapi.editor.DefaultLanguageHighlighterColors
 import com.intellij.openapi.editor.HighlighterColors
 import com.intellij.openapi.editor.colors.TextAttributesKey
 import com.intellij.openapi.fileTypes.SyntaxHighlighterBase
 import com.intellij.psi.tree.IElementType
-import com.squareup.sqldelight.SqliteLexer
+import com.evilstudios.sqldelight.SqliteLexer
 import org.antlr.intellij.adaptor.lexer.SimpleAntlrAdapter
 import org.antlr.intellij.adaptor.lexer.TokenElementType
 

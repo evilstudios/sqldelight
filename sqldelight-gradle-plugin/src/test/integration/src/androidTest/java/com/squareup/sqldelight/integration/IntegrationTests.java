@@ -1,4 +1,4 @@
-package com.squareup.sqldelight.integration;
+package com.evilstudios.sqldelight.integration;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,7 +7,7 @@ import android.support.test.InstrumentationRegistry;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import com.squareup.sqldelight.SqlDelightStatement;
+import com.evilstudios.sqldelight.SqlDelightStatement;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.concurrent.CountDownLatch;
