@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.reference
+package com.squareup.sqldelight.reference
 
-import com.evilstudios.sqldelight.SqlDelightFixtureTestCase
+import com.squareup.sqldelight.SqlDelightFixtureTestCase
 
 class ReferenceTests : SqlDelightFixtureTestCase() {
   override val fixtureDirectory = "reference"

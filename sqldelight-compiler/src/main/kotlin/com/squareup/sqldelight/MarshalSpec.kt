@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight
+package com.squareup.sqldelight
 
-import com.evilstudios.javapoet.ClassName
-import com.evilstudios.javapoet.FieldSpec
-import com.evilstudios.javapoet.MethodSpec
-import com.evilstudios.javapoet.MethodSpec.Builder
-import com.evilstudios.javapoet.ParameterSpec
-import com.evilstudios.javapoet.TypeName
-import com.evilstudios.javapoet.TypeSpec
-import com.evilstudios.sqldelight.resolution.query.Table
-import com.evilstudios.sqldelight.resolution.query.Value
+import com.squareup.javapoet.ClassName
+import com.squareup.javapoet.FieldSpec
+import com.squareup.javapoet.MethodSpec
+import com.squareup.javapoet.MethodSpec.Builder
+import com.squareup.javapoet.ParameterSpec
+import com.squareup.javapoet.TypeName
+import com.squareup.javapoet.TypeSpec
+import com.squareup.sqldelight.resolution.query.Table
+import com.squareup.sqldelight.resolution.query.Value
 import javax.lang.model.element.Modifier.FINAL
 import javax.lang.model.element.Modifier.PRIVATE
 import javax.lang.model.element.Modifier.PROTECTED

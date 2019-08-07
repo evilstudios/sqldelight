@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.types
+package com.squareup.sqldelight.types
 
-import com.evilstudios.javapoet.NameAllocator
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.resolution.query.Value
+import com.squareup.javapoet.NameAllocator
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.resolution.query.Value
 import java.util.ArrayList
 import java.util.LinkedHashSet
 

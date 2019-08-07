@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.resolution.query
+package com.squareup.sqldelight.resolution.query
 
-import com.evilstudios.javapoet.AnnotationSpec
-import com.evilstudios.javapoet.TypeName
-import com.evilstudios.sqldelight.SqliteCompiler
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.types.SqliteType
+import com.squareup.javapoet.AnnotationSpec
+import com.squareup.javapoet.TypeName
+import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.types.SqliteType
 import org.antlr.v4.runtime.ParserRuleContext
 import java.util.ArrayList
 import java.util.Stack

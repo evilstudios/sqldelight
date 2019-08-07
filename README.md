@@ -613,11 +613,11 @@ buildscript {
     mavenCentral()
   }
   dependencies {
-    classpath 'com.evilstudios.sqldelight:gradle-plugin:0.6.1'
+    classpath 'com.squareup.sqldelight:gradle-plugin:0.6.1'
   }
 }
 
-apply plugin: 'com.evilstudios.sqldelight'
+apply plugin: 'com.squareup.sqldelight'
 ```
 
 The Intellij plugin can be installed from Android Studio by navigating<br>

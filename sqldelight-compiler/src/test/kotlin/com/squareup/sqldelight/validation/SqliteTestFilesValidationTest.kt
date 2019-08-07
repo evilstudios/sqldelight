@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.validation
+package com.squareup.sqldelight.validation
 
-import com.evilstudios.sqldelight.SqliteLexer
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.Status.ValidationStatus.Invalid
-import com.evilstudios.sqldelight.types.SymbolTable
+import com.squareup.sqldelight.SqliteLexer
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.Status.ValidationStatus.Invalid
+import com.squareup.sqldelight.types.SymbolTable
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.BaseErrorListener
 import org.antlr.v4.runtime.CommonTokenStream

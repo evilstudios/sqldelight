@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.psi
+package com.squareup.sqldelight.intellij.psi
 
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiReferenceBase
-import com.evilstudios.sqldelight.intellij.SqlDelightManager
-import com.evilstudios.sqldelight.intellij.lang.SqliteFile
-import com.evilstudios.sqldelight.intellij.util.doRename
-import com.evilstudios.sqldelight.intellij.util.findUsages
-import com.evilstudios.sqldelight.intellij.util.isDefinition
-import com.evilstudios.sqldelight.intellij.util.leafAt
-import com.evilstudios.sqldelight.resolution.Resolver
-import com.evilstudios.sqldelight.validation.SqlDelightValidator
+import com.squareup.sqldelight.intellij.SqlDelightManager
+import com.squareup.sqldelight.intellij.lang.SqliteFile
+import com.squareup.sqldelight.intellij.util.doRename
+import com.squareup.sqldelight.intellij.util.findUsages
+import com.squareup.sqldelight.intellij.util.isDefinition
+import com.squareup.sqldelight.intellij.util.leafAt
+import com.squareup.sqldelight.resolution.Resolver
+import com.squareup.sqldelight.validation.SqlDelightValidator
 
 class SqlDelightElementRef(idNode: IdentifierElement, ruleName: String)
 : PsiReferenceBase<IdentifierElement>(idNode, TextRange(0, ruleName.length)) {

@@ -4,7 +4,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import com.evilstudios.sqldelight.RowMapper;
+import com.squareup.sqldelight.RowMapper;
 import java.lang.Deprecated;
 import java.lang.Long;
 import java.lang.Override;

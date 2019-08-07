@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang
+package com.squareup.sqldelight.intellij.lang
 
 import com.intellij.extapi.psi.PsiFileBase
 import com.intellij.openapi.application.ApplicationManager
@@ -23,16 +23,16 @@ import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.FileViewProvider
 import com.intellij.psi.PsiFile
 import com.intellij.psi.PsiManager
-import com.evilstudios.sqldelight.SqliteCompiler
-import com.evilstudios.sqldelight.SqliteLexer
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.SqlitePluginException
-import com.evilstudios.sqldelight.Status
-import com.evilstudios.sqldelight.intellij.SqlDelightManager
-import com.evilstudios.sqldelight.intellij.util.elementAt
-import com.evilstudios.sqldelight.intellij.util.getOrCreateFile
-import com.evilstudios.sqldelight.intellij.util.getOrCreateSubdirectory
-import com.evilstudios.sqldelight.model.relativePath
+import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.SqliteLexer
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.SqlitePluginException
+import com.squareup.sqldelight.Status
+import com.squareup.sqldelight.intellij.SqlDelightManager
+import com.squareup.sqldelight.intellij.util.elementAt
+import com.squareup.sqldelight.intellij.util.getOrCreateFile
+import com.squareup.sqldelight.intellij.util.getOrCreateSubdirectory
+import com.squareup.sqldelight.model.relativePath
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.BaseErrorListener
 import org.antlr.v4.runtime.CommonTokenStream
@@ -80,7 +80,7 @@ class SqliteFile internal constructor(
       lexer.removeErrorListeners()
       lexer.addErrorListener(errorListener)
 
-      val parser = com.evilstudios.sqldelight.SqliteParser(CommonTokenStream(lexer))
+      val parser = com.squareup.sqldelight.SqliteParser(CommonTokenStream(lexer))
       parser.removeErrorListeners()
       parser.addErrorListener(errorListener)
 

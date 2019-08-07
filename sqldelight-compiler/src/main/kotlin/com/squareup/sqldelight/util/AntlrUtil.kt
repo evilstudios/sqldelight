@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.util
+package com.squareup.sqldelight.util
 
-import com.evilstudios.sqldelight.SqliteParser
+import com.squareup.sqldelight.SqliteParser
 
 internal fun SqliteParser.Common_table_expressionContext.isRecursive() =
     (parent as SqliteParser.With_clauseContext).K_RECURSIVE() != null

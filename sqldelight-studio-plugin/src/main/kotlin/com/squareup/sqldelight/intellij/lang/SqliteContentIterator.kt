@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang
+package com.squareup.sqldelight.intellij.lang
 
 import com.intellij.openapi.roots.ContentIterator
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.PsiManager
-import com.evilstudios.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.SqliteCompiler
 
 class SqliteContentIterator(private val psiManager: PsiManager,
     private val processor: (file: SqliteFile) -> Boolean) : ContentIterator {

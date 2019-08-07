@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang
+package com.squareup.sqldelight.intellij.lang
 
 import com.intellij.openapi.fileTypes.FileTypeConsumer
 import com.intellij.openapi.fileTypes.FileTypeFactory
-import com.evilstudios.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.SqliteCompiler
 
 class SqliteFileTypeFactory : FileTypeFactory() {
   override fun createFileTypes(consumer: FileTypeConsumer) {

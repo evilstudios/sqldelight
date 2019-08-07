@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.validation
+package com.squareup.sqldelight.validation
 
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.resolution.Resolver
-import com.evilstudios.sqldelight.resolution.query.QueryResults
-import com.evilstudios.sqldelight.resolution.query.Result
-import com.evilstudios.sqldelight.resolution.resolve
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.resolution.Resolver
+import com.squareup.sqldelight.resolution.query.QueryResults
+import com.squareup.sqldelight.resolution.query.Result
+import com.squareup.sqldelight.resolution.resolve
 
 internal class CreateTriggerValidator(val resolver: Resolver) {
   fun validate(trigger: SqliteParser.Create_trigger_stmtContext) {

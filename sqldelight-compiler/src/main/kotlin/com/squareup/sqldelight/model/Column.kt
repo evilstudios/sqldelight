@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.model
+package com.squareup.sqldelight.model
 
-import com.evilstudios.javapoet.AnnotationSpec
-import com.evilstudios.javapoet.ArrayTypeName
-import com.evilstudios.javapoet.ClassName
-import com.evilstudios.javapoet.CodeBlock
-import com.evilstudios.javapoet.ParameterizedTypeName
-import com.evilstudios.javapoet.TypeName
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.SqlitePluginException
-import com.evilstudios.sqldelight.types.SqliteType
+import com.squareup.javapoet.AnnotationSpec
+import com.squareup.javapoet.ArrayTypeName
+import com.squareup.javapoet.ClassName
+import com.squareup.javapoet.CodeBlock
+import com.squareup.javapoet.ParameterizedTypeName
+import com.squareup.javapoet.TypeName
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.SqlitePluginException
+import com.squareup.sqldelight.types.SqliteType
 import org.antlr.v4.runtime.ParserRuleContext
 import org.antlr.v4.runtime.RuleContext
 

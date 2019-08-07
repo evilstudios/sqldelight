@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.psi
+package com.squareup.sqldelight.intellij.psi
 
 import com.intellij.openapi.module.ModuleUtilCore.findModuleForPsiElement
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.JavaPsiFacade
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiReferenceBase
-import com.evilstudios.sqldelight.intellij.lang.SqliteFile
+import com.squareup.sqldelight.intellij.lang.SqliteFile
 
 class ClassNameElementRef(element: ClassNameElement, private val className: String)
 : PsiReferenceBase<ClassNameElement>(element, TextRange(0, className.length)) {

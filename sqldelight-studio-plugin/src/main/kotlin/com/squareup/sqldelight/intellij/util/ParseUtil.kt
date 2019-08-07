@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.util
+package com.squareup.sqldelight.intellij.util
 
-import com.evilstudios.sqldelight.SqliteParser
+import com.squareup.sqldelight.SqliteParser
 import org.antlr.v4.runtime.ParserRuleContext
 import org.antlr.v4.runtime.RuleContext
 

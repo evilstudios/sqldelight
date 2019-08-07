@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.psi
+package com.squareup.sqldelight.intellij.psi
 
 import com.intellij.lang.ASTNode
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiNamedElement
 import com.intellij.psi.util.PsiTreeUtil
-import com.evilstudios.sqldelight.SqliteLexer
-import com.evilstudios.sqldelight.intellij.lang.SqliteTokenTypes
-import com.evilstudios.sqldelight.intellij.util.SqlitePsiUtils
+import com.squareup.sqldelight.SqliteLexer
+import com.squareup.sqldelight.intellij.lang.SqliteTokenTypes
+import com.squareup.sqldelight.intellij.util.SqlitePsiUtils
 
 sealed class SqliteElement(node: ASTNode) : ASTWrapperPsiElement(node), PsiNamedElement {
   protected var hardcodedName: String? = null

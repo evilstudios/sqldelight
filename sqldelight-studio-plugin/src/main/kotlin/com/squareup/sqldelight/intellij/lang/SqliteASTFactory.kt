@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang
+package com.squareup.sqldelight.intellij.lang
 
 import com.intellij.lang.ASTFactory
 import com.intellij.lang.ASTNode
@@ -22,22 +22,22 @@ import com.intellij.psi.impl.source.tree.FileElement
 import com.intellij.psi.impl.source.tree.LeafPsiElement
 import com.intellij.psi.tree.IElementType
 import com.intellij.psi.tree.IFileElementType
-import com.evilstudios.sqldelight.SqliteLexer
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.intellij.lang.SqliteTokenTypes.RULE_ELEMENT_TYPES
-import com.evilstudios.sqldelight.intellij.lang.SqliteTokenTypes.TOKEN_ELEMENT_TYPES
-import com.evilstudios.sqldelight.intellij.psi.ASTWrapperPsiElement
-import com.evilstudios.sqldelight.intellij.psi.ClassNameElement
-import com.evilstudios.sqldelight.intellij.psi.IdentifierElement
-import com.evilstudios.sqldelight.intellij.psi.ImportElement
-import com.evilstudios.sqldelight.intellij.psi.ParseElement
-import com.evilstudios.sqldelight.intellij.psi.SqlDelightComment
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.ColumnAliasElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.TableAliasElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.TableNameElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.ViewNameElement
+import com.squareup.sqldelight.SqliteLexer
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.intellij.lang.SqliteTokenTypes.RULE_ELEMENT_TYPES
+import com.squareup.sqldelight.intellij.lang.SqliteTokenTypes.TOKEN_ELEMENT_TYPES
+import com.squareup.sqldelight.intellij.psi.ASTWrapperPsiElement
+import com.squareup.sqldelight.intellij.psi.ClassNameElement
+import com.squareup.sqldelight.intellij.psi.IdentifierElement
+import com.squareup.sqldelight.intellij.psi.ImportElement
+import com.squareup.sqldelight.intellij.psi.ParseElement
+import com.squareup.sqldelight.intellij.psi.SqlDelightComment
+import com.squareup.sqldelight.intellij.psi.SqliteElement.ColumnAliasElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.TableAliasElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.TableNameElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.ViewNameElement
 
 class SqliteASTFactory : ASTFactory() {
   override fun createComposite(type: IElementType) =

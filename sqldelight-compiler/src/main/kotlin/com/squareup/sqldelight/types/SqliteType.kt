@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.types
+package com.squareup.sqldelight.types
 
-import com.evilstudios.javapoet.ArrayTypeName
-import com.evilstudios.javapoet.ClassName
-import com.evilstudios.javapoet.TypeName
+import com.squareup.javapoet.ArrayTypeName
+import com.squareup.javapoet.ClassName
+import com.squareup.javapoet.TypeName
 
 internal enum class SqliteType(val defaultType: TypeName, val handledTypes: Set<TypeName>) {
   INTEGER(TypeName.LONG, setOf(

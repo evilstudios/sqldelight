@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang.formatter
+package com.squareup.sqldelight.intellij.lang.formatter
 
 import com.intellij.formatting.Alignment
 import com.intellij.formatting.Block
@@ -24,7 +24,7 @@ import com.intellij.formatting.Wrap
 import com.intellij.formatting.WrapType
 import com.intellij.lang.ASTNode
 import com.intellij.openapi.util.TextRange
-import com.evilstudios.sqldelight.intellij.lang.formatter.util.addIfValid
+import com.squareup.sqldelight.intellij.lang.formatter.util.addIfValid
 import java.util.ArrayList
 
 internal class JavadocBlock(private val node: ASTNode) : Block {

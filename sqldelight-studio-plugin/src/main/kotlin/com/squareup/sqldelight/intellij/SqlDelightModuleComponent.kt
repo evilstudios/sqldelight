@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij
+package com.squareup.sqldelight.intellij
 
 import com.android.tools.idea.gradle.parser.BuildFileKeyType
 import com.android.tools.idea.gradle.parser.GradleBuildFile
@@ -26,8 +26,8 @@ import com.intellij.openapi.command.WriteCommandAction
 import com.intellij.openapi.module.Module
 import com.intellij.openapi.module.ModuleComponent
 import com.intellij.util.text.VersionComparatorUtil
-import com.evilstudios.sqldelight.VERSION
-import com.evilstudios.sqldelight.intellij.util.iterateClasspath
+import com.squareup.sqldelight.VERSION
+import com.squareup.sqldelight.intellij.util.iterateClasspath
 import org.jetbrains.plugins.groovy.lang.psi.GroovyPsiElement
 import javax.swing.event.HyperlinkEvent
 
@@ -82,7 +82,7 @@ class SqlDelightModuleComponent(val module: Module) : ModuleComponent {
   }
 
   companion object {
-    private val GRADLE_PREFIX = "com.evilstudios.sqldelight:gradle-plugin"
+    private val GRADLE_PREFIX = "com.squareup.sqldelight:gradle-plugin"
     private val CURRENT_GRADLE = "$GRADLE_PREFIX:$VERSION"
     private val SUPPRESSED = "sqldelight.outdate.runtime.suppressed.version";
   }

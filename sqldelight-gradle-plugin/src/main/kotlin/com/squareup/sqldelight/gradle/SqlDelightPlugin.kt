@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.gradle
+package com.squareup.sqldelight.gradle
 
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.AppPlugin
 import com.android.build.gradle.LibraryExtension
 import com.android.build.gradle.LibraryPlugin
 import com.android.build.gradle.api.BaseVariant
-import com.evilstudios.sqldelight.SqliteCompiler.Companion.FILE_EXTENSION
-import com.evilstudios.sqldelight.VERSION
+import com.squareup.sqldelight.SqliteCompiler.Companion.FILE_EXTENSION
+import com.squareup.sqldelight.VERSION
 import org.gradle.api.DomainObjectSet
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -48,7 +48,7 @@ class SqlDelightPlugin : Plugin<Project> {
     project.gradle.addListener(object : DependencyResolutionListener {
       override fun beforeResolve(dependencies: ResolvableDependencies?) {
         if (System.getProperty("sqldelight.skip.runtime") != "true") {
-          compileDeps.add(project.dependencies.create("com.evilstudios.sqldelight:runtime:$VERSION"))
+          compileDeps.add(project.dependencies.create("com.squareup.sqldelight:runtime:$VERSION"))
         }
         compileDeps.add(
             project.dependencies.create("com.android.support:support-annotations:23.1.1"))

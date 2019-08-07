@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.resolution
+package com.squareup.sqldelight.resolution
 
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.resolution.query.Result
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.resolution.query.Result
 import org.antlr.v4.runtime.ParserRuleContext
 
 sealed class ResolutionError(val originatingElement: ParserRuleContext, val errorMessage: String) {

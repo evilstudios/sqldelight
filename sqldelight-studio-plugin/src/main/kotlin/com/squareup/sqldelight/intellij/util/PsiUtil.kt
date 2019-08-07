@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.util
+package com.squareup.sqldelight.intellij.util
 
 import com.intellij.psi.PsiDirectory
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiFile
 import com.intellij.psi.tree.IElementType
 import com.intellij.psi.util.PsiTreeUtil
-import com.evilstudios.sqldelight.SqliteParser
+import com.squareup.sqldelight.SqliteParser
 import org.antlr.intellij.adaptor.lexer.RuleElementType
 import org.antlr.intellij.adaptor.lexer.TokenElementType
 import org.antlr.v4.runtime.ParserRuleContext

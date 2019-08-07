@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-  <id>com.evilstudios.sqldelight</id>
+  <id>com.squareup.sqldelight</id>
   <name>SQLDelight</name>
   <category>Custom Languages</category>
   <vendor url="https://github.com/square">Square, Inc.</vendor>
@@ -41,55 +41,55 @@
 
   <module-components>
     <component>
-      <implementation-class>com.evilstudios.sqldelight.intellij.SqlDelightModuleComponent</implementation-class>
+      <implementation-class>com.squareup.sqldelight.intellij.SqlDelightModuleComponent</implementation-class>
     </component>
   </module-components>
 
   <extensions defaultExtensionNs="com.intellij">
     <compileServer.plugin classpath="sqldelight-jps-plugin.jar"/>
 
-    <fileTypeFactory implementation="com.evilstudios.sqldelight.intellij.lang.SqliteFileTypeFactory"/>
+    <fileTypeFactory implementation="com.squareup.sqldelight.intellij.lang.SqliteFileTypeFactory"/>
     <externalAnnotator language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqlDocumentAnnotator"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqlDocumentAnnotator"/>
     <gotoDeclarationHandler
-        implementation="com.evilstudios.sqldelight.intellij.lang.SqliteGotoDeclarationHandler"/>
-    <postStartupActivity implementation="com.evilstudios.sqldelight.intellij.SqlDelightStartupActivity"/>
-    <errorHandler implementation="com.evilstudios.sqldelight.intellij.SqlDelightErrorHandler" />
+        implementation="com.squareup.sqldelight.intellij.lang.SqliteGotoDeclarationHandler"/>
+    <postStartupActivity implementation="com.squareup.sqldelight.intellij.SqlDelightStartupActivity"/>
+    <errorHandler implementation="com.squareup.sqldelight.intellij.SqlDelightErrorHandler" />
 
     <completion.contributor language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.ClassCompletionContributor"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.ClassCompletionContributor"/>
     <completion.contributor language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqlDelightCompletionContributor"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqlDelightCompletionContributor"/>
     <findUsagesHandlerFactory
-        implementation="com.evilstudios.sqldelight.intellij.lang.SqliteFindUsagesHandlerFactory"/>
+        implementation="com.squareup.sqldelight.intellij.lang.SqliteFindUsagesHandlerFactory"/>
     <annotator language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.psi.ClassNameElementAnnotator" />
+        implementationClass="com.squareup.sqldelight.intellij.psi.ClassNameElementAnnotator" />
 
     <lang.findUsagesProvider
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqliteFindUsagesProvider"
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqliteFindUsagesProvider"
         language="Sqlite"/>
     <lang.fileViewProviderFactory language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqlDelightFileViewProviderFactory"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProviderFactory"/>
     <lang.syntaxHighlighterFactory key="SqliteSyntaxHighlighter"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqliteSyntaxHighlighterFactory"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqliteSyntaxHighlighterFactory"/>
     <lang.parserDefinition language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqliteParserDefinition"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqliteParserDefinition"/>
     <lang.ast.factory language='Sqlite'
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqliteASTFactory"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqliteASTFactory"/>
     <lang.braceMatcher language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqlitePairedBraceMatcher"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqlitePairedBraceMatcher"/>
     <lang.quoteHandler language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqliteTokenSetQuoteHandler"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqliteTokenSetQuoteHandler"/>
     <lang.commenter language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqlDelightCommenter"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqlDelightCommenter"/>
     <lang.psiStructureViewFactory language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.SqlDelightStructureViewFactory"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.SqlDelightStructureViewFactory"/>
     <lang.formatter language="Sqlite"
-        implementationClass="com.evilstudios.sqldelight.intellij.lang.formatter.SqlDelightFormattingModelBuilder"/>
+        implementationClass="com.squareup.sqldelight.intellij.lang.formatter.SqlDelightFormattingModelBuilder"/>
   </extensions>
 
   <actions>
-    <action id="SQDelight.CopyAsSqlite" class="com.evilstudios.sqldelight.intellij.actions.CopyAsSqliteAction" text="Copy as SQLite">
+    <action id="SQDelight.CopyAsSqlite" class="com.squareup.sqldelight.intellij.actions.CopyAsSqliteAction" text="Copy as SQLite">
       <add-to-group group-id="CutCopyPasteGroup" anchor="after" relative-to-action="$Copy"/>
       <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
       <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift C"/>

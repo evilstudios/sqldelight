@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.resolution.query
+package com.squareup.sqldelight.resolution.query
 
-import com.evilstudios.javapoet.ClassName
-import com.evilstudios.javapoet.NameAllocator
-import com.evilstudios.javapoet.ParameterizedTypeName
-import com.evilstudios.javapoet.TypeName
-import com.evilstudios.sqldelight.FactorySpec
-import com.evilstudios.sqldelight.SqliteCompiler
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.model.annotations
-import com.evilstudios.sqldelight.model.columnName
-import com.evilstudios.sqldelight.model.isNullable
-import com.evilstudios.sqldelight.model.javaType
-import com.evilstudios.sqldelight.model.type
-import com.evilstudios.sqldelight.types.SqliteType
-import com.evilstudios.sqldelight.util.getOrSet
-import com.evilstudios.sqldelight.util.javadocText
+import com.squareup.javapoet.ClassName
+import com.squareup.javapoet.NameAllocator
+import com.squareup.javapoet.ParameterizedTypeName
+import com.squareup.javapoet.TypeName
+import com.squareup.sqldelight.FactorySpec
+import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.model.annotations
+import com.squareup.sqldelight.model.columnName
+import com.squareup.sqldelight.model.isNullable
+import com.squareup.sqldelight.model.javaType
+import com.squareup.sqldelight.model.type
+import com.squareup.sqldelight.types.SqliteType
+import com.squareup.sqldelight.util.getOrSet
+import com.squareup.sqldelight.util.javadocText
 import org.antlr.v4.runtime.ParserRuleContext
 
 /**

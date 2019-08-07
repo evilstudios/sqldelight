@@ -55,7 +55,7 @@ task bugsnagKey {
   doLast {
     versionFile.parentFile.mkdirs()
     versionFile.text = """// Generated file. Do not edit!
-package com.evilstudios.sqldelight.intellij
+package com.squareup.sqldelight.intellij
 
 internal val BUGSNAG_KEY = "${getBugsnagKey()}"
 """

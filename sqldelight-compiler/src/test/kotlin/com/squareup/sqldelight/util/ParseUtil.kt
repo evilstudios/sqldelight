@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.util
+package com.squareup.sqldelight.util
 
-import com.evilstudios.sqldelight.SqliteLexer
-import com.evilstudios.sqldelight.SqliteParser
+import com.squareup.sqldelight.SqliteLexer
+import com.squareup.sqldelight.SqliteParser
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.CommonTokenStream
 import org.antlr.v4.runtime.ParserRuleContext

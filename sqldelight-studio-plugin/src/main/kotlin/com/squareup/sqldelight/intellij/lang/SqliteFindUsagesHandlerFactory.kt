@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang
+package com.squareup.sqldelight.intellij.lang
 
 import com.intellij.find.findUsages.FindUsagesHandler
 import com.intellij.find.findUsages.FindUsagesHandlerFactory
 import com.intellij.find.findUsages.JavaFindUsagesHandler
 import com.intellij.find.findUsages.JavaFindUsagesHandlerFactory
 import com.intellij.psi.PsiElement
-import com.evilstudios.sqldelight.intellij.psi.IdentifierElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
-import com.evilstudios.sqldelight.intellij.util.getSecondaryElements
+import com.squareup.sqldelight.intellij.psi.IdentifierElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
+import com.squareup.sqldelight.intellij.util.getSecondaryElements
 
 /*
  * This takes precedence over SqliteFindUsagesProvider, and is being used separately

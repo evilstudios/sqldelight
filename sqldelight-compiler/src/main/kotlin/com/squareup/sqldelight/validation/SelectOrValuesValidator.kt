@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.validation
+package com.squareup.sqldelight.validation
 
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.resolution.Resolver
-import com.evilstudios.sqldelight.resolution.resolve
-import com.evilstudios.sqldelight.types.ArgumentType
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.resolution.Resolver
+import com.squareup.sqldelight.resolution.resolve
+import com.squareup.sqldelight.types.ArgumentType
 
 internal class SelectOrValuesValidator(private val resolver: Resolver) {
   fun validate(selectOrValues: SqliteParser.Select_or_valuesContext) {

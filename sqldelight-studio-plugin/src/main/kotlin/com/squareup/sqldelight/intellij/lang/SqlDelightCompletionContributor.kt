@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang
+package com.squareup.sqldelight.intellij.lang
 
 import com.intellij.codeInsight.completion.CompletionContributor
 import com.intellij.codeInsight.completion.CompletionInitializationContext
@@ -27,15 +27,15 @@ import com.intellij.patterns.ElementPatternCondition
 import com.intellij.patterns.InitialPatternCondition
 import com.intellij.psi.PsiElement
 import com.intellij.util.ProcessingContext
-import com.evilstudios.javapoet.TypeName
-import com.evilstudios.sqldelight.SqliteLexer
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.intellij.SqlDelightManager
-import com.evilstudios.sqldelight.intellij.util.elementAt
-import com.evilstudios.sqldelight.resolution.ResolutionError
-import com.evilstudios.sqldelight.resolution.Resolver
-import com.evilstudios.sqldelight.types.SymbolTable
-import com.evilstudios.sqldelight.validation.SqlDelightValidator
+import com.squareup.javapoet.TypeName
+import com.squareup.sqldelight.SqliteLexer
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.intellij.SqlDelightManager
+import com.squareup.sqldelight.intellij.util.elementAt
+import com.squareup.sqldelight.resolution.ResolutionError
+import com.squareup.sqldelight.resolution.Resolver
+import com.squareup.sqldelight.types.SymbolTable
+import com.squareup.sqldelight.validation.SqlDelightValidator
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.CommonTokenStream
 import org.antlr.v4.runtime.ParserRuleContext
@@ -62,7 +62,7 @@ private class SqlDelightCompletionProvider : CompletionProvider<CompletionParame
     val manager = SqlDelightManager.getInstance(parameters.originalFile) ?: return
     if (parameters.originalFile !is SqliteFile) return
     val lexer = SqliteLexer(ANTLRInputStream(parameters.position.containingFile.text))
-    val parser = com.evilstudios.sqldelight.SqliteParser(CommonTokenStream(lexer))
+    val parser = com.squareup.sqldelight.SqliteParser(CommonTokenStream(lexer))
     parser.parse().elementAt(parameters.offset)?.getAvailableValues(result, manager)
     // No reason to do any other completion for SQLDelight files. Might save some time.
     result.stopHere()

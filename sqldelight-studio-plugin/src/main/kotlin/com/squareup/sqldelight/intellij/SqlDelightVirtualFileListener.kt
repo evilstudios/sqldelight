@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij
+package com.squareup.sqldelight.intellij
 
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
@@ -22,9 +22,9 @@ import com.intellij.openapi.vfs.VirtualFileEvent
 import com.intellij.openapi.vfs.VirtualFileMoveEvent
 import com.intellij.openapi.vfs.VirtualFilePropertyEvent
 import com.intellij.psi.PsiManager
-import com.evilstudios.sqldelight.SqliteCompiler
-import com.evilstudios.sqldelight.intellij.lang.SqlDelightFileViewProvider
-import com.evilstudios.sqldelight.intellij.lang.SqliteFile
+import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProvider
+import com.squareup.sqldelight.intellij.lang.SqliteFile
 import java.util.LinkedHashMap
 
 class SqlDelightVirtualFileListener(val project: Project) : VirtualFileAdapter() {

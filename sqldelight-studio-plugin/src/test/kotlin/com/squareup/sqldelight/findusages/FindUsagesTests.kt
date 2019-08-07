@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.findusages
+package com.squareup.sqldelight.findusages
 
-import com.evilstudios.sqldelight.SqlDelightFixtureTestCase
-import com.evilstudios.sqldelight.assertThat
+import com.squareup.sqldelight.SqlDelightFixtureTestCase
+import com.squareup.sqldelight.assertThat
 
 class FindUsagesTests : SqlDelightFixtureTestCase() {
   override val fixtureDirectory = "findusages"

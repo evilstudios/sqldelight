@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.validation
+package com.squareup.sqldelight.validation
 
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.SqlitePluginException
-import com.evilstudios.sqldelight.resolution.ResolutionError
-import com.evilstudios.sqldelight.resolution.Resolver
-import com.evilstudios.sqldelight.resolution.query.Result
-import com.evilstudios.sqldelight.resolution.query.Value
-import com.evilstudios.sqldelight.resolution.resolve
-import com.evilstudios.sqldelight.types.ArgumentType
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.SqlitePluginException
+import com.squareup.sqldelight.resolution.ResolutionError
+import com.squareup.sqldelight.resolution.Resolver
+import com.squareup.sqldelight.resolution.query.Result
+import com.squareup.sqldelight.resolution.query.Value
+import com.squareup.sqldelight.resolution.resolve
+import com.squareup.sqldelight.types.ArgumentType
 
 internal class UpdateValidator(
     val resolver: Resolver,

@@ -1,4 +1,4 @@
-package com.evilstudios.sqldelight;
+package com.squareup.sqldelight;
 
 import java.util.Set;
 

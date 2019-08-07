@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.util
+package com.squareup.sqldelight.intellij.util
 
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiFile
@@ -25,12 +25,12 @@ import com.intellij.refactoring.listeners.RefactoringElementListener
 import com.intellij.refactoring.rename.RenameUtil
 import com.intellij.refactoring.rename.RenameUtil.doRename
 import com.intellij.usageView.UsageInfo
-import com.evilstudios.sqldelight.SqliteCompiler
-import com.evilstudios.sqldelight.intellij.lang.SqliteFile
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
-import com.evilstudios.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
-import com.evilstudios.sqldelight.model.methodName
+import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.intellij.lang.SqliteFile
+import com.squareup.sqldelight.intellij.psi.SqliteElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
+import com.squareup.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
+import com.squareup.sqldelight.model.methodName
 import java.util.ArrayList
 
 /**

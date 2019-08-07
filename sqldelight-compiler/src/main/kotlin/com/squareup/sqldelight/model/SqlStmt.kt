@@ -13,26 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.model
+package com.squareup.sqldelight.model
 
-import com.evilstudios.javapoet.ArrayTypeName
-import com.evilstudios.javapoet.ClassName
-import com.evilstudios.javapoet.CodeBlock
-import com.evilstudios.javapoet.MethodSpec
-import com.evilstudios.javapoet.ParameterSpec
-import com.evilstudios.javapoet.ParameterizedTypeName
-import com.evilstudios.javapoet.TypeName
-import com.evilstudios.javapoet.TypeSpec
-import com.evilstudios.javapoet.WildcardTypeName
-import com.evilstudios.sqldelight.FactorySpec
-import com.evilstudios.sqldelight.SqliteCompiler
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.resolution.query.Value
-import com.evilstudios.sqldelight.types.Argument
-import com.evilstudios.sqldelight.types.ArgumentType
-import com.evilstudios.sqldelight.types.SqliteType
-import com.evilstudios.sqldelight.types.toSqliteArguments
-import com.evilstudios.sqldelight.util.javadocText
+import com.squareup.javapoet.ArrayTypeName
+import com.squareup.javapoet.ClassName
+import com.squareup.javapoet.CodeBlock
+import com.squareup.javapoet.MethodSpec
+import com.squareup.javapoet.ParameterSpec
+import com.squareup.javapoet.ParameterizedTypeName
+import com.squareup.javapoet.TypeName
+import com.squareup.javapoet.TypeSpec
+import com.squareup.javapoet.WildcardTypeName
+import com.squareup.sqldelight.FactorySpec
+import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.resolution.query.Value
+import com.squareup.sqldelight.types.Argument
+import com.squareup.sqldelight.types.ArgumentType
+import com.squareup.sqldelight.types.SqliteType
+import com.squareup.sqldelight.types.toSqliteArguments
+import com.squareup.sqldelight.util.javadocText
 import org.antlr.v4.runtime.ParserRuleContext
 import org.antlr.v4.runtime.misc.Interval
 import java.util.ArrayList
@@ -417,12 +417,12 @@ class SqlStmt private constructor(
   }
 
   companion object {
-    val SQLDELIGHT_COMPILED_STATEMENT = ClassName.get("com.evilstudios.sqldelight", "SqlDelightCompiledStatement")
+    val SQLDELIGHT_COMPILED_STATEMENT = ClassName.get("com.squareup.sqldelight", "SqlDelightCompiledStatement")
     val SQLDELIGHT_INSERT_STATEMENT = SQLDELIGHT_COMPILED_STATEMENT.nestedClass("Insert")
     val SQLDELIGHT_UPDATE_STATEMENT = SQLDELIGHT_COMPILED_STATEMENT.nestedClass("Update")
     val SQLDELIGHT_DELETE_STATEMENT = SQLDELIGHT_COMPILED_STATEMENT.nestedClass("Delete")
-    val SQLDELIGHT_STATEMENT = ClassName.get("com.evilstudios.sqldelight", "SqlDelightStatement")
-    val SQLDELIGHT_LITERALS = ClassName.get("com.evilstudios.sqldelight.internal", "SqliteLiterals")
+    val SQLDELIGHT_STATEMENT = ClassName.get("com.squareup.sqldelight", "SqlDelightStatement")
+    val SQLDELIGHT_LITERALS = ClassName.get("com.squareup.sqldelight.internal", "SqliteLiterals")
     val SQLITEDATABASE_TYPE = ClassName.get("android.database.sqlite", "SQLiteDatabase")
     val LIST_TYPE = ClassName.get(List::class.java)
     val ARRAYLIST_TYPE = ClassName.get(ArrayList::class.java)

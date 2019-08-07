@@ -1,12 +1,12 @@
 buildscript {
   dependencies {
     classpath dep.androidPlugin
-    classpath 'com.evilstudios.sqldelight:gradle-plugin:0.5.1'
+    classpath 'com.squareup.sqldelight:gradle-plugin:0.5.1'
   }
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'com.evilstudios.sqldelight'
+apply plugin: 'com.squareup.sqldelight'
 
 dependencies {
   compile 'com.jakewharton:butterknife:8.4.0'

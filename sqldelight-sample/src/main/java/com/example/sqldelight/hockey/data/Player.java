@@ -1,8 +1,8 @@
 package com.example.sqldelight.hockey.data;
 
 import com.google.auto.value.AutoValue;
-import com.evilstudios.sqldelight.EnumColumnAdapter;
-import com.evilstudios.sqldelight.RowMapper;
+import com.squareup.sqldelight.EnumColumnAdapter;
+import com.squareup.sqldelight.RowMapper;
 import java.util.Calendar;
 
 @AutoValue public abstract class Player implements PlayerModel {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.lang.formatter
+package com.squareup.sqldelight.intellij.lang.formatter
 
 import com.intellij.formatting.Alignment
 import com.intellij.formatting.Block
@@ -25,11 +25,11 @@ import com.intellij.formatting.WrapType
 import com.intellij.lang.ASTNode
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiWhiteSpace
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.intellij.lang.SqliteTokenTypes
-import com.evilstudios.sqldelight.intellij.lang.formatter.util.addIfValid
-import com.evilstudios.sqldelight.intellij.lang.formatter.util.rangeToEnd
-import com.evilstudios.sqldelight.intellij.lang.formatter.util.siblingSemicolon
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.intellij.lang.SqliteTokenTypes
+import com.squareup.sqldelight.intellij.lang.formatter.util.addIfValid
+import com.squareup.sqldelight.intellij.lang.formatter.util.rangeToEnd
+import com.squareup.sqldelight.intellij.lang.formatter.util.siblingSemicolon
 import java.util.ArrayList
 
 internal class SqlStmtBlock(private val node: ASTNode) : Block {

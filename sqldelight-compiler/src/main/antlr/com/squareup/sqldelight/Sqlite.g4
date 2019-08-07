@@ -31,7 +31,7 @@
 grammar Sqlite;
 
 @header {
-    package com.evilstudios.sqldelight;
+    package com.squareup.sqldelight;
 }
 
 parse

@@ -1,4 +1,4 @@
-package com.evilstudios.sqldelight.intellij.util
+package com.squareup.sqldelight.intellij.util
 
 import com.android.tools.idea.gradle.parser.GradleBuildFile
 import com.android.tools.idea.gradle.util.GradleUtil

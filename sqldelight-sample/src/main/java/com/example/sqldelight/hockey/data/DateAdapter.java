@@ -1,7 +1,7 @@
 package com.example.sqldelight.hockey.data;
 
 import android.support.annotation.NonNull;
-import com.evilstudios.sqldelight.ColumnAdapter;
+import com.squareup.sqldelight.ColumnAdapter;
 import java.util.Calendar;
 
 public final class DateAdapter implements ColumnAdapter<Calendar, Long> {

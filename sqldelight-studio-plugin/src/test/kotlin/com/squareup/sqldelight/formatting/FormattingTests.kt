@@ -1,4 +1,4 @@
-package com.evilstudios.sqldelight.formatting
+package com.squareup.sqldelight.formatting
 
 import com.google.common.truth.Truth.assertThat
 import com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase

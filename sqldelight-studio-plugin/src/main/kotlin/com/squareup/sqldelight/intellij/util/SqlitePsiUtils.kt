@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.intellij.util
+package com.squareup.sqldelight.intellij.util
 
 import com.intellij.openapi.project.Project
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiFileFactory
 import com.intellij.psi.impl.PsiFileFactoryImpl
 import com.intellij.psi.tree.IElementType
-import com.evilstudios.sqldelight.intellij.lang.SqliteLanguage
+import com.squareup.sqldelight.intellij.lang.SqliteLanguage
 
 object SqlitePsiUtils {
   fun createLeafFromText(project: Project, context: PsiElement?, text: String, type: IElementType) =

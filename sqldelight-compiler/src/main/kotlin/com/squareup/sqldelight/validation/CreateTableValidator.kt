@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.evilstudios.sqldelight.validation
+package com.squareup.sqldelight.validation
 
-import com.evilstudios.sqldelight.SqliteParser
-import com.evilstudios.sqldelight.resolution.ResolutionError
-import com.evilstudios.sqldelight.resolution.Resolver
-import com.evilstudios.sqldelight.resolution.foreignKeys
-import com.evilstudios.sqldelight.resolution.resolve
-import com.evilstudios.sqldelight.types.ArgumentType
-import com.evilstudios.sqldelight.types.ForeignKey
+import com.squareup.sqldelight.SqliteParser
+import com.squareup.sqldelight.resolution.ResolutionError
+import com.squareup.sqldelight.resolution.Resolver
+import com.squareup.sqldelight.resolution.foreignKeys
+import com.squareup.sqldelight.resolution.resolve
+import com.squareup.sqldelight.types.ArgumentType
+import com.squareup.sqldelight.types.ForeignKey
 
 internal class CreateTableValidator(var resolver: Resolver) {
   fun validate(createTable: SqliteParser.Create_table_stmtContext) {
